@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tabHost"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.tuananhcaraballo.skillswapv2.MainActivity">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+
+                <include
+                    android:id="@+id/layout1"
+                    layout="@layout/activity_network"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></include>
+
+                <include
+                    android:id="@+id/layout2"
+                    layout="@layout/activity_notifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></include>
+
+                <include
+                    android:id="@+id/layout3"
+                    layout="@layout/activity_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></include>
+
+                <include
+                    android:id="@+id/layout4"
+                    layout="@layout/activity_messages"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></include>
+                <include
+                    android:id="@+id/layout5"
+                    layout="@layout/activity_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></include>
+
+
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_weight="0"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+        </LinearLayout>
+
+</TabHost>
+
